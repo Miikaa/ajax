@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>PokeDex</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/pokemon-icon.svg">
+</head>
+
+<body>
+    <h1 id="heading"></h1>
+    <form name="theatreList" id="theatreList">
+        Valitse alue tai teatteri:
+        <input id="cinema" list="theatres" name="theatres" onchange="showMovies()">
+        <datalist id="theatres">
+            <option value="Pääkaupunkiseutu"></option>
+            <option value="Espoo"></option>
+            <option value="Espoo: OMENA"></option>
+            <option value="Espoo: SELLO"></option>
+            <option value="Helsinki"></option>
+            <option value="Helsinki: ITIS"></option>
+            <option value="Helsinki: KINOPALATSI"></option>
+            <option value="Helsinki: MAXIM"></option>
+            <option value="Helsinki: TENNISPALATSI"></option>
+            <option value="Vantaa: FLAMINGO"></option>
+            <option value="Jyväskylä: FANTASIA"></option>
+            <option value="Kuopio: SCALA"></option>
+            <option value="Lahti: KUVAPALATSI"></option>
+            <option value="Lappeenranta: STRAND"></option>
+            <option value="Oulu: PLAZA"></option>
+            <option value="Pori: PROMENADI"></option>
+            <option value="Tampere"></option>
+            <option value="Tampere: CINE ATLAS"></option>
+            <option value="Tampere: PLEVNA"></option>
+            <option value="Turku ja Raisio"></option>
+            <option value="Turku: KINOPALATSI"></option>
+            <option value="Raisio: LUXE MYLLY"></option>
+        </datalist>
+        <br><br>
+        Tai etsi teatteria hakusanalla:
+        <input type="text" id="search">
+        <input type="button" id="searchButton" value="Etsi" onclick="searchFunction()">
+        <br><br>
+    </form>
+    <div id="results"></div>
+    <button id="scroll" title="Takaisin alkuun">Alkuun</button>
+    <script src="index.js"></script>
+</body>
+
+</html>

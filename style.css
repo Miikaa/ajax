@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Trebuchet MS", sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#searchButton {
+    font-family: "Trebuchet MS", sans-serif;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+    padding: 3px 10px 3px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+table,
+td {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+table {
+    border-spacing: 10px;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+#pic {
+    font-style: italic;
+}
+
+#moviePic {
+    display: block;
+}
+
+#today {
+    vertical-align: bottom;
+    font-size: small;
+}
+
+#startTime {
+    font-size: 175%;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+#title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 150%;
+    vertical-align: bottom;
+}
+
+#auditorium {
+    vertical-align: top;
+}
+
+#duration {
+    padding: 5px;
+    font-size: small;
+}
+
+a:link,
+a:hover,
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#scroll {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#scroll:hover {
+    border: 3px solid;
+}
