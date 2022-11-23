@@ -1,49 +1,44 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 
 <head>
-    <title>PokeDex</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/pokemon-icon.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toni Miikan elokuva sivu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
 </head>
 
 <body>
-    <h1 id="heading"></h1>
-    <form name="theatreList" id="theatreList">
-        Valitse alue tai teatteri:
-        <input id="cinema" list="theatres" name="theatres" onchange="showMovies()">
-        <datalist id="theatres">
-            <option value="Pääkaupunkiseutu"></option>
-            <option value="Espoo"></option>
-            <option value="Espoo: OMENA"></option>
-            <option value="Espoo: SELLO"></option>
-            <option value="Helsinki"></option>
-            <option value="Helsinki: ITIS"></option>
-            <option value="Helsinki: KINOPALATSI"></option>
-            <option value="Helsinki: MAXIM"></option>
-            <option value="Helsinki: TENNISPALATSI"></option>
-            <option value="Vantaa: FLAMINGO"></option>
-            <option value="Jyväskylä: FANTASIA"></option>
-            <option value="Kuopio: SCALA"></option>
-            <option value="Lahti: KUVAPALATSI"></option>
-            <option value="Lappeenranta: STRAND"></option>
-            <option value="Oulu: PLAZA"></option>
-            <option value="Pori: PROMENADI"></option>
-            <option value="Tampere"></option>
-            <option value="Tampere: CINE ATLAS"></option>
-            <option value="Tampere: PLEVNA"></option>
-            <option value="Turku ja Raisio"></option>
-            <option value="Turku: KINOPALATSI"></option>
-            <option value="Raisio: LUXE MYLLY"></option>
-        </datalist>
-        <br><br>
-        Tai etsi teatteria hakusanalla:
-        <input type="text" id="search">
-        <input type="button" id="searchButton" value="Etsi" onclick="searchFunction()">
-        <br><br>
-    </form>
-    <div id="results"></div>
-    <button id="scroll" title="Takaisin alkuun">Alkuun</button>
+
+    <div class="wrapper">
+        <div class="logo">
+            <div class="container">
+                <p>Miika<span>Toni</span></p>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Etsi elokuvaa:</h3>
+                <!-- Hakukenttä johon laitettiin onkeyup-eventti joka   -->
+                <input type="text" class="form-control" placeholder="Etsi elokuvan nimellä ..." id="movie-search-box"
+                    onkeyup="findMovies()" onclick="findMovies()">
+
+                <div class="search-list" id="search-list">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 
